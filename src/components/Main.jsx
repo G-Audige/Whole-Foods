@@ -39,38 +39,63 @@ function Main(props) {
       <div className="sale sale-shadow sale-sizing">
         <div>
           <img src="https://i.imgur.com/C2fPapC.jpg" alt="" />
-        <div className="dinner-hype">
-          <h1>Dinner? Done! Shop our mealtime shortcuts</h1>
-          <p>
-            Chill out with meals that are ready to go and ready to heat, from
-            chef-inspired solves to frozen faves. Even easier? Get it all with
-            pickup or delivery.
-          </p>
-          <a href={props.link.shopNow}>Shop now</a>
-          <p>
-            Free pickup for orders $35 or more. Delivery exclusively for Prime
-            members in select ZIP codes.
-          </p>
-        </div>
-        
+          <div className="dinner-hype">
+            <h1>Dinner? Done! Shop our mealtime shortcuts</h1>
+            <p>
+              Chill out with meals that are ready to go and ready to heat, from
+              chef-inspired solves to frozen faves. Even easier? Get it all with
+              pickup or delivery.
+            </p>
+            <a href={props.link.shopNow}>Shop now</a>
+            <p>
+              Free pickup for orders $35 or more. Delivery exclusively for Prime
+              members in select ZIP codes.
+            </p>
+          </div>
         </div>
       </div>
       <div className="products">
-        <div>
-          <img src="https://i.imgur.com/IyEegMp.jpg" />
-          <a href={props.link.sales}>2 for $4 Large Hass Avocado with Prime.</a>
+        <div className="product">
+          <div>
+            <img src="https://i.imgur.com/IyEegMp.jpg" />
+          </div>
+          <div>
+            <a href={props.link.sales}>
+              2 for $4 Large Hass Avocado with Prime.
+            </a>
+          </div>
         </div>
-        <div>
-          <img src="https://i.imgur.com/rA0AADW.jpg" />
-          <a href={props.link.sales}>Responsibly Farmed Fresh Atlantic Salmon Fillets 20% off with Prime.</a>
+        <div className="product">
+          <div>
+            {' '}
+            <img src="https://i.imgur.com/rA0AADW.jpg" />
+          </div>
+          <div>
+            <a href={props.link.sales}>
+              Responsibly Farmed Fresh Atlantic Salmon Fillets 20% off with
+              Prime.
+            </a>
+          </div>
         </div>
-        <div>
-          <img src="https://i.imgur.com/7qpsoFH.jpg" />
-          <a href={props.link.sales}>Select Reusable Water Baottles and Accessories 33% off with Prime.</a>
+        <div className="product">
+          <div>
+            <img src="https://i.imgur.com/7qpsoFH.jpg" />
+          </div>
+          <div>
+            <a href={props.link.sales}>
+              Select Reusable Water Bottles and Accessories 33% off with Prime.
+            </a>
+          </div>
         </div>
-        <div>
-          <img src="https://i.imgur.com/3fuQrx6.jpg" />
-          <a href={props.link.sales}>Explore brands that support our communties.</a>
+        <div className="product">
+          <div>
+            <img src="https://i.imgur.com/3fuQrx6.jpg" />
+          </div>
+          <div>
+            <a href={props.link.sales}>
+              Explore brands that support our communties.
+            </a>
+          </div>
         </div>
       </div>
     </div>

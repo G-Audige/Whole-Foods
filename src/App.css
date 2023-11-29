@@ -135,16 +135,15 @@
 /* Section3 */
 .sale-sizing {
   width: 80%;
-  position:static
+  position: relative;
 }
 .dinner-hype {
   background-color: white;
   position: absolute;
   height: fit-content;
   width: 350px;
-  top: 805px;
   bottom: 0;
-  left: 0;
+  left: -10%;
 }
 .dinner-hype a {
   background-color: rgb(0, 78, 54);
@@ -166,12 +165,21 @@
 
 /* Section4 */
 
-.products div img {
-  width: 20%;
+.product img {
+  width: 300px;
 }
-/* .products div {
-  
-} */
+.products a {
+  color: rgb(0, 78, 54);
+  font-weight: bold;
+  text-decoration: none;
+}
+.product {
+  display: flex;
+  margin: auto;
+  width: 80%
+}
+
+
 
 /* Footer */
 .footer {
@@ -224,6 +232,17 @@ h4 {
   .boxes div {
     width: 45%;
   }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product {
+    display:block;
+    width:45%
+  }
+  .product img {
+    width: 100%
+  }
   .footer-top {
     flex-wrap: wrap;
   }
@@ -231,5 +250,18 @@ h4 {
 @media screen and (max-width: 600px) {
   .header-bottom {
     font-size: x-small;
+  }
+  .footer-top div {
+    width: 50%;
+  }
+  .products {
+    display:block
+  }
+  .product{
+    width: 60%;
+    display: flex;
+  }
+  .product img {
+    width: 150px
   }
 }
