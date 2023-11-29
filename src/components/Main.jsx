@@ -36,7 +36,7 @@ function Main(props) {
           <img src="https://i.imgur.com/TZz9c56.png" />
         </div>
       </div>
-      <div className="sale sale-shadow">
+      <div className="sale sale-shadow sale-sizing">
         <div>
           <img src="https://i.imgur.com/C2fPapC.jpg" alt="" />
         <div className="dinner-hype">

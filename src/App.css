@@ -92,10 +92,10 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px
+  padding: 10px;
 }
 .sales-hype div {
-  margin: 0 10px 0 10px
+  margin: 0 10px 0 10px;
 }
 .productImg {
   margin-top: 80px;
@@ -122,6 +122,7 @@
 }
 .boxes div img {
   width: 90px;
+  border-bottom-right-radius: 10px;
 }
 .boxes div a {
   color: rgb(0, 78, 54);
@@ -132,11 +133,16 @@
   margin-left: 5px;
 }
 /* Section3 */
+.sale-sizing {
+  width: 80%;
+  position:static
+}
 .dinner-hype {
   background-color: white;
   position: absolute;
   height: fit-content;
   width: 350px;
+  top: 805px;
   bottom: 0;
   left: 0;
 }
@@ -146,13 +152,13 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px
+  padding: 10px;
 }
 .dinner-hype p {
   font-size: 12px;
 }
 .dinner-hype div {
-  margin: 0 10px 0 10px
+  margin: 0 10px 0 10px;
 }
 .sale-shadow {
   box-shadow: 0px 0px 5px 0px gray;
@@ -201,18 +207,29 @@ h4 {
 }
 
 @media screen and (max-width: 800px) {
+  .header-bottom {
+    font-size: smaller;
+  }
   .sales-hype {
     margin: auto;
     position: static;
+  }
+  .sale-sizing {
+    width: 100%;
   }
   .dinner-hype {
     margin: auto;
     position: static;
   }
   .boxes div {
-    width: 45%
+    width: 45%;
   }
   .footer-top {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-bottom {
+    font-size: x-small;
   }
 }
