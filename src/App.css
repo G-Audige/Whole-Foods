@@ -1,3 +1,4 @@
+/* Header */
 .full-header {
   position: fixed;
   top: 0;
@@ -5,30 +6,7 @@
   left: 0;
   z-index: 1;
 }
-.footer {
-  background-color: rgb(0, 78, 54);
-  color: white;
-}
-.footer img {
-  width: 75px;
-  margin-left: 30px;
-}
-.footer-top {
-  display: flex;
-  justify-content: space-evenly;
-}
-.footer-top div {
-  margin: 5px;
-}
-.footer-bottom {
-  background-color: rgb(5, 122, 87);
-  display: flex;
-  justify-content: space-evenly;
-}
-h4 {
-  font-size: 13px;
-}
-.header {
+.header-top {
   align-items: center;
   background-color: rgb(0, 78, 54);
   color: white;
@@ -37,51 +15,31 @@ h4 {
   justify-content: space-evenly;
   width: 100%;
 }
-.header img {
+.header-top img {
   height: 40px;
 }
-.header a {
+.header-top a {
   text-decoration: none;
   color: white;
 }
-.nav {
+.header-bottom {
+  align-items: center;
   background-color: rgb(239, 239, 239);
-  box-shadow: 1px 1px 15px 1px gray;
+  box-shadow: 0px 0px 5px 0px gray;
   display: flex;
+  height: 60px;
   justify-content: space-evenly;
   text-align: center;
 }
-.nav a {
-  color: rgb(0, 78, 54);
+.header-bottom a {
+  color: #006f46;
   font-weight: bold;
   text-decoration: none;
   margin: 8px;
 }
-.main {
-  margin: auto;
-  margin-top: 140px;
-}
-.sale {
-  margin: auto;
-}
-.sale img {
-  width: 100%;
-}
-.sales-hype {
-  background-color: white;
-  position: absolute;
-  height: 300px;
-  width: 320px;
-  top: 150px;
-}
-.sales-hype p {
-  font-size: 12px;
-}
-.productImg {
-  margin-top: 80px;
-}
-.productImg img {
-  margin: auto;
+.header-bottom a:hover {
+  border-bottom: 1.5px solid #2c8746;
+  color: #2c8746;
 }
 .search {
   align-items: center;
@@ -102,4 +60,159 @@ h4 {
 .search input {
   background-color: transparent;
   border: transparent;
+}
+
+/* Main */
+.main {
+  margin: auto;
+  margin-top: 140px;
+}
+/* Section1 */
+.sale {
+  margin: auto;
+  position: relative;
+}
+.sale img {
+  width: 100%;
+}
+.sales-hype {
+  background-color: white;
+  position: absolute;
+  height: fit-content;
+  width: 320px;
+  bottom: 10px;
+  left: 0px;
+}
+.sales-hype p {
+  font-size: 12px;
+}
+.sales-hype a {
+  background-color: rgb(0, 78, 54);
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px
+}
+.sales-hype div {
+  margin: 0 10px 0 10px
+}
+.productImg {
+  margin-top: 80px;
+}
+.productImg img {
+  margin: auto;
+}
+/* Section2 */
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.boxes div {
+  align-items: end;
+  background-color: rgb(250, 245, 235);
+  border: rgb(250, 245, 235);
+  border-radius: 10px;
+  display: flex;
+  height: 90px;
+  margin: 10px;
+  width: 20%;
+  justify-content: space-between;
+}
+.boxes div img {
+  width: 90px;
+}
+.boxes div a {
+  color: rgb(0, 78, 54);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+/* Section3 */
+.dinner-hype {
+  background-color: white;
+  position: absolute;
+  height: fit-content;
+  width: 350px;
+  bottom: 0;
+  left: 0;
+}
+.dinner-hype a {
+  background-color: rgb(0, 78, 54);
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px
+}
+.dinner-hype p {
+  font-size: 12px;
+}
+.dinner-hype div {
+  margin: 0 10px 0 10px
+}
+.sale-shadow {
+  box-shadow: 0px 0px 5px 0px gray;
+}
+
+/* Section4 */
+
+.products div img {
+  width: 20%;
+}
+/* .products div {
+  
+} */
+
+/* Footer */
+.footer {
+  background-color: rgb(0, 78, 54);
+  color: white;
+}
+.footer img {
+  width: 75px;
+  margin-left: 30px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-top div {
+  margin: 5px;
+}
+.footer-bottom {
+  background-color: #006f46;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.footer-bottom a {
+  margin: 5px;
+}
+.amazon-logo img {
+  width: 200px;
+}
+
+h4 {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 800px) {
+  .sales-hype {
+    margin: auto;
+    position: static;
+  }
+  .dinner-hype {
+    margin: auto;
+    position: static;
+  }
+  .boxes div {
+    width: 45%
+  }
+  .footer-top {
+    flex-wrap: wrap;
+  }
 }

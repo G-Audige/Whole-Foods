@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Footer() {
+function Footer(props) {
   return (
     <div className="footer">
-      <img src="https://i.imgur.com/6QKGtCD.png" />
-      <div className="footer-top">     
+      <img src="https://i.imgur.com/D6Pwe95.png" />
+      <div className="footer-top">
         <div>
           <h3>Shopping</h3>
           <h4>Weekly Sales</h4>
@@ -48,6 +48,15 @@ function Footer() {
           <a>Legal</a>
           <a>Corporate Policies</a>
         </div>
+        <div></div>
+      </div>
+      <div className="footer-bottom">
+        <a className="amazon-logo" href="https://imgur.com/s2gmUjy">
+          <img
+            src="https://i.imgur.com/s2gmUjy.png"
+            title="source: imgur.com"
+          />
+        </a>
       </div>
     </div>
   );

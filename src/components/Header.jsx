@@ -3,7 +3,7 @@ import React from 'react';
 function Header(props) {
   return (
     <div>
-      <div className="header">
+      <div className="header-top">
         <a href={props.link.mainPage}>
           <img src={'https://i.imgur.com/nddpnhp.png'} alt="" />
         </a>
@@ -17,7 +17,7 @@ function Header(props) {
         <a href={props.link.logIn}>Log In</a>
         <a href={props.link.cart}>Cart</a>
       </div>
-      <div className='nav'>
+      <div className='header-bottom'>
         <a href={props.link.products}>Browse In-Store</a>
         <a href={props.link.sales}>Weekly Sales</a>
         <a href={props.link.groceries}>Grocery Pickup & Delivery</a>
