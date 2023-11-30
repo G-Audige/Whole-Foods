@@ -193,11 +193,13 @@
   max-width: 700px;
   max-height: 700px;
   margin: auto;
+  margin-top: 15%;
   position: relative;
 }
 .amazon-box {
   position: absolute;
   left: 10%;
+  top: -10%;
   width: 50%;
 }
 .shipping-hype {
@@ -302,10 +304,15 @@ h4 {
     width: 100vw;
     position: static;
     margin: auto;
-    left: 0%;
+    left: -10%;
   }
   .shipping-hype img {
     display: none;
+  }
+  .background {
+    width: 100vw;
+    max-width: 100vw;
+    margin-top: 5%;
   }
 }
 @media screen and (max-width: 600px) {
