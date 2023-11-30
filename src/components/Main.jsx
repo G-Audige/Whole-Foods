@@ -21,19 +21,19 @@ function Main(props) {
       <div className="boxes">
         <div>
           <a href={props.link.groceries}>Grocery Pickup & Delivery</a>
-          <img src="https://i.imgur.com/WToUcWu.png" />
+          <img src="https://i.imgur.com/WToUcWu.png" alt="" />
         </div>
         <div>
           <a href={props.link.catering}>Catering</a>
-          <img src="https://i.imgur.com/NECxkEk.png" />
+          <img src="https://i.imgur.com/NECxkEk.png" alt="" />
         </div>
         <div>
           <a href={props.link.shipping}>Shipped to You</a>
-          <img src="https://i.imgur.com/iWdSftr.png" />
+          <img src="https://i.imgur.com/iWdSftr.png" alt="" />
         </div>
         <div>
           <a href={props.link.sales}>Weekly Sales</a>
-          <img src="https://i.imgur.com/TZz9c56.png" />
+          <img src="https://i.imgur.com/TZz9c56.png" alt="" />
         </div>
       </div>
       <div className="sale sale-shadow sale-sizing">
@@ -57,7 +57,7 @@ function Main(props) {
       <div className="products">
         <div className="product">
           <div>
-            <img src="https://i.imgur.com/IyEegMp.jpg" />
+            <img src="https://i.imgur.com/IyEegMp.jpg" alt="" />
           </div>
           <div>
             <a href={props.link.sales}>
@@ -67,8 +67,7 @@ function Main(props) {
         </div>
         <div className="product">
           <div>
-            {' '}
-            <img src="https://i.imgur.com/rA0AADW.jpg" />
+            <img src="https://i.imgur.com/rA0AADW.jpg" alt="" />
           </div>
           <div>
             <a href={props.link.sales}>
@@ -79,7 +78,7 @@ function Main(props) {
         </div>
         <div className="product">
           <div>
-            <img src="https://i.imgur.com/7qpsoFH.jpg" />
+            <img src="https://i.imgur.com/7qpsoFH.jpg" alt="" />
           </div>
           <div>
             <a href={props.link.sales}>
@@ -89,12 +88,34 @@ function Main(props) {
         </div>
         <div className="product">
           <div>
-            <img src="https://i.imgur.com/3fuQrx6.jpg" />
+            <img src="https://i.imgur.com/3fuQrx6.jpg" alt="" />
           </div>
           <div>
             <a href={props.link.sales}>
               Explore brands that support our communties.
             </a>
+          </div>
+        </div>
+      </div>
+      <div className="shipping">
+        <div className="background">
+          <img
+            src="https://i.imgur.com/C76fpIM.jpg"
+            className="amazon-box"
+            alt=""
+          />
+          <div className="shipping-hype">
+            <div>
+              <h1>Market, now shipped FREE with Prime.</h1>
+              <p>
+                No store near you? No problem. Shop 365 brand pantry staples on
+                Amazon and get your picks shipped FREE with Prime.
+              </p>
+              <div className="a-size">
+                <a href={props.link.shipping}>Shop now</a>
+              </div>
+              <img src="https://i.imgur.com/AInSWuV.jpg" alt="" />
+            </div>
           </div>
         </div>
       </div>
